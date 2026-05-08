@@ -45,6 +45,9 @@ button {
   color: white;
   cursor: pointer;
   border-radius: 5px;
+
+  /* ADDED SPACE BELOW LOGIN BUTTON */
+  margin-bottom: 15px;
 }
 
 /* LAYOUT */
@@ -140,6 +143,7 @@ body {
   padding: 10px;
   display: none;
 }
+
 /* ABOUT PAGE */
 .about-main {
   display: flex;
@@ -193,4 +197,20 @@ body {
   line-height: 1.8;
 
   color: #555;
+}
+/* HEADER FLEX */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGOUT BUTTON */
+.logout-btn {
+  color: white;
+  text-decoration: none;
+  background: #df6464;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-weight: bold;
 }
