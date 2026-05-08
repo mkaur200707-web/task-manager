@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadHome()">
+
+<header class="header">
+  <h2>Task Manager</h2>
+</header>
+
+<aside class="sidebar">
+  <h3>⏰ Timer</h3>
+
+  <input type="number" id="minutes" placeholder="Minutes">
+
+  <button onclick="startTimer()">Start</button>
+  <button onclick="pauseTimer()">Pause</button>
+  <button onclick="resetTimer()">Reset</button>
+
+  <p id="countdown">00:00</p>
+
+  <nav>
+    <a href="home.html">🏠 Home</a>
+    <a href="tasks.html">📋 Tasks</a>
+    <a href="about.html">ℹ️ About</a>
+  </nav>
+</aside>
+
+<main class="main">
+  <h2 id="welcome"></h2>
+  <p id="quote"></p>
+
+  <h3>Your Tasks</h3>
+  <div id="homeTasks" class="task-container"></div>
+</main>
+
+<div id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

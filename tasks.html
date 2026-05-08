@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tasks</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadTasks()">
+
+<header class="header">
+  <h2>Task Manager</h2>
+</header>
+
+<aside class="sidebar">
+  <h3>Menu</h3>
+  <nav>
+    <a href="home.html">🏠 Home</a>
+    <a href="tasks.html">📋 Tasks</a>
+  </nav>
+</aside>
+
+<main class="main">
+
+<h2>Your Tasks</h2>
+
+<input type="text" id="taskName" placeholder="Task name">
+<input type="date" id="dueDate">
+<button onclick="addTask()">Add Task</button>
+
+<div id="taskList" class="task-container"></div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
